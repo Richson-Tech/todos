@@ -37,14 +37,14 @@ const Modal = ({ mode, setShowModal, task }) => {
     <div className="overlay">
       <div className="modal">
         <div className="form-title-container">
-          <h3>Let's {mode} your task</h3>
+          <h3>{mode} your task</h3>
           <button onClick={() => setShowModal(false)}>X</button>
         </div>
         <form>
           <input
             required
             maxLength={30}
-            placeholder=" Your task goes here"
+            placeholder=" List your task"
             name="title"
             value={data.title}
             onChange={handleChange}
